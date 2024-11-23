@@ -1,0 +1,13 @@
+def generar_n_caracteres(n, caracter):
+    """
+    Esta función toma un entero n y un carácter, y devuelve el carácter multiplicado por n.
+    :param n: El número de veces que se repetirá el carácter.
+    :param caracter: El carácter a repetir.
+    :return: Una cadena con el carácter repetido n veces.
+    """
+    return caracter * n
+# Ejemplo de uso
+n = int(input("Introduce un número entero: "))
+caracter = input("Introduce un carácter: ")
+resultado = generar_n_caracteres(n, caracter)
+print(f"El resultado es: {resultado}")
