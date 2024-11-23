@@ -1,0 +1,19 @@
+def es_palindromo(cadena):
+    """
+    Esta función toma una cadena como argumento y devuelve True si es un palíndromo,
+    de lo contrario devuelve False.
+    :param cadena: La cadena a verificar.
+    :return: True si la cadena es un palíndromo, False en caso contrario.
+    """
+    # Convertir la cadena a minúsculas para evitar problemas con mayúsculas
+    cadena = cadena.lower()
+    # Eliminar espacios en blanco para considerar frases completas
+    cadena = cadena.replace(" ", "")
+    # Verificar si la cadena es igual a su reverso
+    return cadena == cadena[::-1]
+# Ejemplo de uso
+cadena = input("Introduce una palabra o frase: ")
+if es_palindromo(cadena):
+    print(f"La cadena '{cadena}' es un palíndromo.")
+else:
+    print(f"La cadena '{cadena}' no es un palíndromo.")
