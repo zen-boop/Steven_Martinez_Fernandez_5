@@ -1,0 +1,14 @@
+def max(n1,n2):#funcion de max(n1,n2)
+    if n1>n2:#compara que n1 sea mayor que n2
+        return n1#regresa n1
+    elif n1==n2:#compara si es igual
+        return True#regresa si es igual
+    else:#si no se cumple si se realiza alguyno de los anteriores
+        return n2#regresa n2
+n1=float(input("Introduce el primer número: "))#hace que puedas colocar el primer numero
+n2=float(input("Introduce el segundo número: "))#hace que puedas colocar el primer numero
+m=max(n1,n2)#lleva la variable "n1" y "n2" a la funcion
+if m==True:#se realiza si "m" es igual a True
+    print("los numeros son iguales")#dice que son iguales
+else:#si no se cumple si se realiza alguyno de los anteriores
+    print(f"El mayor de los dos números es: {m}")#coloca el mayor numero
