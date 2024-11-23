@@ -1,0 +1,17 @@
+def max(n1,n2,n3):#funcion de max(n1,n2,n3)
+    if n1>=n2 and n1>=n3:
+        return n1#regresa n1
+    elif n2>=n1 and n2>=n3:
+        return n2#regresa n2
+    elif n2==n1 and n2==n3:
+        return True#regresa True
+    else:#si no se cumple si se realiza alguyno de los anteriores
+        return n3#return n3
+n1=float(input("Introduce el primer número: "))#hace que puedas colocar el primer numero
+n2=float(input("Introduce el segundo número: "))#hace que puedas colocar el primer numero
+n3=float(input("Introduce el tercer número: "))#hace que puedas colocar el primer numero
+m=max(n1,n2,n3)#lleva la variable "n1" y "n2" a la funcion
+if m==True:#se realiza si "m" es igual a True
+    print("todos son iguales")
+else:#si no se cumple si se realiza alguyno de los anteriores
+    print(f"El mayor de los tres números es: {m}")#coloca el mayor numero
