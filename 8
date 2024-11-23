@@ -1,0 +1,12 @@
+def procedimiento(lista):
+    """
+    Esta función toma una lista de números enteros e imprime un histograma en la pantalla.
+    :param lista: Lista de números enteros.
+    """
+    for numero in lista:
+        print('*' * numero)
+# Pedir datos al usuario
+numeros = input("Introduce una lista de números enteros separados por comas: ").split(',')
+numeros = [int(numero) for numero in numeros]
+# Imprimir el histograma
+procedimiento(numeros)
