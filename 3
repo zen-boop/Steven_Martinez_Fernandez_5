@@ -1,0 +1,11 @@
+def cl(el):#funcion de cl(el)
+    co=0#agrega valor al contador
+    for _ in el:#se repetira mientra _ estre en "el"
+        co+=1#agrega 1 al contado
+    return co#regresa contador
+c=input("Introduce una cadena: ")#hace que puedas colocar el valor
+lc=cl(c)#agrega el valor a "lc"
+print(f"La longitud de la cadena es: {lc}")#coloca el valor
+l=input("Introduce una lista de elementos separados por comas: ").split(',')#hace que puedas colocar el valor
+ll=cl(l)#agrega el valor a "ll"
+print(f"La longitud de la lista es: {ll}")#coloca el resultado
