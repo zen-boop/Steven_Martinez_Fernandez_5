@@ -1,0 +1,16 @@
+def sum(l):#funcion de la suma
+    t=0#añade t
+    for n in l:#se repite mientras
+        t+=n#se hace la suma
+    return t#regresa t
+def multip(l):#realiza la multiplicacion
+    t=1#añade t el valor de 1 paraq evitar errores
+    for n in l:#se repite mientras n esta en l
+        t*=n#se suma
+    return t
+ns=input("Introduce una lista de números separados por comas: ").split(',')#hace que coloque sel valor
+ns=[float(n) for n in ns]#seplara las ","
+suma=sum(ns)#añade el valor a la suma
+multi=multip(ns)#añade el valor a la multiplicaccion
+print(f"La suma de los números es: {suma}")#imprime la suma
+print(f"La multiplicación de los números es: {multi}")#imprime la multiplicacion
