@@ -1,12 +1,20 @@
-def procedimiento(lista):
+def superposicion(lista1, lista2):
     """
-    Esta función toma una lista de números enteros e imprime un histograma en la pantalla.
-    :param lista: Lista de números enteros.
+    Esta función toma dos listas y devuelve True si tienen al menos un miembro en común,
+    de lo contrario devuelve False.
+    :param lista1: Primera lista de elementos.
+    :param lista2: Segunda lista de elementos.
+    :return: True si hay al menos un miembro en común, False en caso contrario.
     """
-    for numero in lista:
-        print('*' * numero)
-# Pedir datos al usuario
-numeros = input("Introduce una lista de números enteros separados por comas: ").split(',')
-numeros = [int(numero) for numero in numeros]
-# Imprimir el histograma
-procedimiento(numeros)
+    for elemento1 in lista1:
+        for elemento2 in lista2:
+            if elemento1 == elemento2:
+                return True
+    return False
+# Ejemplo de uso
+lista1 = input("Introduce los elementos de la primera lista separados por comas: ").split(',')
+lista2 = input("Introduce los elementos de la segunda lista separados por comas: ").split(',')
+if superposicion(lista1, lista2):
+    print("Las listas tienen al menos un miembro en común.")
+else:
+    print("Las listas no tienen ningún miembro en común.")
